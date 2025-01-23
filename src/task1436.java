@@ -8,7 +8,7 @@ public class task1436 {
             arr[i] = sc.nextInt();
         }
         boolean swapped = true;
-        for (int i = 1; i < n - 1; i++) {
+        for (int i = 1; i < n; i++) {
             int k = arr[i];
             int j = i - 1;
             while (j >= 0 && arr[j] > k) {
@@ -21,6 +21,7 @@ public class task1436 {
                     System.out.print(arr[l] + " ");
                 }
                 System.out.println();
+                swapped = true;
             }
         }
 
