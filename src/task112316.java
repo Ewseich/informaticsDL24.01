@@ -23,11 +23,15 @@ public class task112316 {
         }
 
         for (int i = 0; i < n; i++) {
-            if (i != n-1 && arr[i] == arr[i+1]) count++;
+            if (i != n-1 && arr[i] == arr[i+1]) {
+                count++;
+            }
             else {
-                if (count == k) System.out.print(arr[i] + " ");
+                if (count == k) {
+                    System.out.print(arr[i] + " ");
+                    bol = 1;
+                }
                 count = 1;
-                bol = 1;
             }
         }
         if (bol == 0) System.out.println(0);
